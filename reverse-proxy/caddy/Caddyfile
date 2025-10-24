@@ -1,0 +1,36 @@
+*.mydomain.com {
+    tls {
+        dns cloudflare {env.CF_API_TOKEN}
+        propagation_delay 2m
+        resolvers 1.1.1.1
+    }
+
+    route {
+
+        @caddy host caddy.mydomain.com
+        handle @caddy {
+            root * /usr/share/caddy
+            php_fastcgi localhost:80
+            file_server
+        }
+
+        @plex host homeflix.mydomain.com
+        handle @plex {
+            reverse_proxy 192.168.1.10:5006
+        }
+
+        @it-tools host it-tools.mydomain.com
+        handle @it-tools {
+            reverse_proxy 192.168.1.20:8001
+        }
+
+        @portainer host portainer.mydomain.com
+        handle @portainer {
+            reverse_proxy https://192.168.1.30:9443 {
+                transport http {
+                    tls_insecure_skip_verify
+                }
+            }
+        }
+    }
+}

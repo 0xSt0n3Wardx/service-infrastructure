@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - 9024:9000  # Portainer UI (HTTP)
+      - 9424:9443  # Portainer UI (HTTPS)
+    volumes:
+      - /run/docker.sock:/var/run/docker.sock  # Accès au socket Docker
+      - /home/portainer/docker-compose/portainer-data:/data  # Stockage des données de Portainer
+    restart: unless-stopped  # Redémarrage automatique
+
+volumes:
+  portainer-data:
