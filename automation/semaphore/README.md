@@ -30,3 +30,23 @@ Voici l'arborescence du projet :
   - `semaphore_config/`       # Fichiers de configuration
 
 ## 🐳 Déploiement avec Docker Compose
+
+1. Démarrage des services
+`docker-compose up -d`
+
+2. Vérification du statut
+`docker-compose ps`
+
+## 🌐 Accès à l'interface
+
+Une fois les conteneurs démarrés, accédez à Semaphore :
+
+`URL : http://ip_server:3444`
+
+Identifiants : Utilisez les credentials admin définis dans .env
+
+## 📚 Ressources utiles
+
+[Documentation Semaphore](https://semaphoreui.com/)
+[Guide Ansible](https://docs.ansible.com/)
+[Docker Documentation](https://docs.docker.com/)
