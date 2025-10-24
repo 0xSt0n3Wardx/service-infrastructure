@@ -14,16 +14,17 @@ Avant de commencer, assurez-vous d'avoir :
 - 🔧 Au moins 2GB de RAM disponibles
 
 ### Vérification de l'installation
-```bash
+
 docker --version
 docker-compose --version
 
 ### 📁 Structure du projet
 
-```bash
 semaphore/
 ├── docker-compose.yml      # Stack Docker
 ├── .env                    # Variables d'environnement
 ├── inventory/              # Dossiers pour les inventaires Ansible
 ├── semaphore_data/         # Données persistantes de Semaphore
 └── semaphore_config/       # Fichiers de configuration
+
+### ⚙️ Configuration
