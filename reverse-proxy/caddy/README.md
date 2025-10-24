@@ -115,7 +115,7 @@ docker-compose pull
 2. Redémarrez le service :
 
 ```bash
-docker-compose up -d
+docker-compose up -d --force-recreate
 ```
 
 ## 📚 Ressources
