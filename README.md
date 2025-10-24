@@ -1,24 +1,30 @@
 # 🏠 Homelab Infrastructure
+[![Self-Hosted](https://img.shields.io/badge/Self--Hosted-100%25-blue)](https://github.com/topics/self-hosted)
+[![Caddy](https://img.shields.io/badge/Reverse%20Proxy-Caddy-orange)](https://caddyserver.com)
+[![Authentik](https://img.shields.io/badge/SSO-Authentik-green)](https://goauthentik.io)
+[![Portainer](https://img.shields.io/badge/Containers-Portainer-blue)](https://www.portainer.io)
+[![Uptime Kuma](https://img.shields.io/badge/Monitoring-Uptime%20Kuma-yellow)](https://github.com/louislam/uptime-kuma)
 
-Setup complet de mon infrastructure self-hosted : reverse proxy, authentification, monitoring et gestion de conteneurs.
+My self-hosted homelab, designed for learning, experimenting, and sharing with the tech community.
+This repository includes my configurations for reverse proxy, authentication, monitoring, and container management.
 
 ## 🛠️ Services d'Infrastructure
 
 ### 🔄 Reverse Proxy & SSL
-- **Caddy** - Reverse proxy avec TLS automatique
-- Configuration pour exposition sécurisée des services
+- **Caddy** - Reverse proxy with automatic TLS
+- Secure service exposure configuration
 
-### 🔐 Authentification
-- **Authentik** - SSO et gestion des identités
-- Centralisation de l'authentification
+### 🔐 Authentication
+- **Authentik** - SSO and identity management
+- Centralized authentication for all services
 
-### 🐳 Gestion de Conteneurs  
-- **Portainer** - Interface de gestion Docker
-- Monitoring et administration des conteneurs
+### 🐳 Container Management  
+- **Portainer** - Docker management interface
+- Container monitoring and administration
 
 ### 📊 Monitoring
-- **Uptime Kuma** - Monitoring de disponibilité
+- **Uptime Kuma** - Uptime and availability monitoring
 
-## 🔗 Intégration avec la Sécurité
+## 🔗 Security Integration
 
-Ce setup s'intègre avec mon [Homelab Security](lien-vers-repo-security) pour une infrastructure complète et sécurisée.
+This setup integrates with my [Homelab Security](lien-vers-repo-security) for a complete and secure infrastructure.
