@@ -18,7 +18,8 @@ Avant de commencer, assurez-vous d'avoir :
 docker --version
 docker-compose --version
 
-📁 Structure du projet
+### 📁 Structure du projet
+
 ```bash
 semaphore/
 ├── docker-compose.yml      # Stack Docker
