@@ -20,11 +20,13 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### 📁 Structure du projet
 
-semaphore/
-├── docker-compose.yml      # Stack Docker
-├── .env                    # Variables d'environnement
-├── inventory/              # Dossiers pour les inventaires Ansible
-├── semaphore_data/         # Données persistantes de Semaphore
-└── semaphore_config/       # Fichiers de configuration
+Voici l'arborescence du projet :
+
+- `semaphore/`
+  - `docker-compose.yml`      # Stack Docker
+  - `.env`                    # Variables d'environnement
+  - `inventory/`              # Dossiers pour les inventaires Ansible
+  - `semaphore_data/`         # Données persistantes de Semaphore
+  - `semaphore_config/`       # Fichiers de configuration
 
 ## 🐳 Déploiement avec Docker Compose
