@@ -97,6 +97,8 @@ Résultat  exécution
 
 ## 📚 Ressources utiles
 
--`[Documentation Semaphore](https://semaphoreui.com/docs)`
--`[Guide Ansible](https://docs.ansible.com/)`
--`[Docker Documentation](https://docs.docker.com/)`
+```test
+[Documentation Semaphore](https://semaphoreui.com/docs)
+[Guide Ansible](https://docs.ansible.com/)
+[Docker Documentation](https://docs.docker.com/)
+```
