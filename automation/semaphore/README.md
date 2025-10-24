@@ -15,11 +15,12 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### Vérification de l'installation
 
+bash
 docker --version
 docker-compose --version
 
 ### 📁 Structure du projet
-
+text
 semaphore/
 ├── docker-compose.yml      # Stack Docker
 ├── .env                    # Variables d'environnement
@@ -27,4 +28,4 @@ semaphore/
 ├── semaphore_data/         # Données persistantes de Semaphore
 └── semaphore_config/       # Fichiers de configuration
 
-### ⚙️ Configuration
+## 🐳 Déploiement avec Docker Compose
