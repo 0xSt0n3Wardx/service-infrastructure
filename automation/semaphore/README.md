@@ -46,17 +46,20 @@ docker-compose ps
 Connectez-vous avec les identifiants admin définis dans .env.
 Créez un projet (ex : homelab)
 Créer un une nouvelle clé
+![Description de l’image](./images/ssh_key.png)
 
 Crée un repositories GitHub ou GitLab
+![Description de l’image](./images/repo_github.png)
 
 Ajouter un fichier Inventory
-
+![Description de l’image](./images/inventory.png)
 Créer Task 
-
 Ce task a pour but de tester un ping sur les serveurs
+![Description de l’image](./images/task.png)
+
 
 Résultat du test ping 
-
+![Description de l’image](./images/resultat_task.png)
 NB : Assurez-vous d’avoir python installer sur vos machines cibles
 
 ```bash
@@ -65,14 +68,16 @@ sudo apt install python3 python3-venv -y
 ```
 
 Un autre exemple qui consiste a déployer nginx et apache respectivement sur nos 2 serveurs
-![task_install_nginx_apache](https://./images/task_install_nginx_apache.png)
+![task_install_nginx_apache](./images/task_install_nginx_apache.png)
 Dépôt GitHub
 ![Description de l’image](./images/file_yaml_nginx_apache.png)
 Résultat  exécution
-
-[demo_nginxt](http://srv-deb-demo.blackward.net/)
+![Description de l’image](./images/resultat_task_nginx_apache.png)
+[demo_nginx](http://srv-deb-demo.blackward.net/)
+![demo_nginx](./images/demo_nginx.png)
 
 [demo_apache](http://srv-deb2-demo.blackward.net/)
+![demo_apache](./images/demo_apache.png)
 
 ## 📚 Ressources utiles
 
