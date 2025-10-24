@@ -29,6 +29,7 @@ semaphore/
 ├── inventory/              # Dossiers pour les inventaires Ansible
 ├── semaphore_data/         # Données persistantes de Semaphore
 └── semaphore_config/       # Fichiers de configuration
+└── images/                 # 
 ```
 ## 🐳 Déploiement avec Docker Compose
 
@@ -42,7 +43,7 @@ docker-compose up -d
 docker-compose ps
 ```
 
-🧩 7️⃣ Configuration post-installation
+## 🧩 Configuration post-installation
 Connectez-vous avec les identifiants admin définis dans .env.
 Créez un projet (ex : homelab)
 Créer un une nouvelle clé
