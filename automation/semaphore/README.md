@@ -1,5 +1,17 @@
 # 🚀 Semaphore - Interface Web pour Ansible
 
+## 📖 Sommaire
+- [Prérequis](#-prérequis)
+
+- [Structure du projet](#-structure-du-projet)
+
+- [Déploiement avec Docker Compose](#-déploiement-avec-docker-compose)
+
+- [Configuration post-installation](#-configuration-post-installation)
+
+- [Ressources utiles](#-ressources-utiles)
+
+
 **Semaphore** est une interface web légère permettant d'exécuter et gérer des **playbooks Ansible** facilement.
 
 Ce guide décrit comment déployer Semaphore avec **Docker Compose**, connecté à une base **MySQL**.
@@ -45,12 +57,14 @@ docker-compose ps
 
 ## 🧩 Configuration post-installation
 Connectez-vous avec les identifiants admin définis dans .env.
+
 Créez un projet (ex : homelab)
-Créer un une nouvelle clé
+
+Créer une nouvelle clé
 
 ![Description de l’image](./images/ssh_key.png)
 
-Crée un repositories GitHub ou GitLab
+Créer un dépôt GitHub ou GitLab
 
 ![Description de l’image](./images/repo_github.png)
 
@@ -58,7 +72,7 @@ Ajouter un fichier Inventory
 
 ![Description de l’image](./images/inventory.png)
 
-Créer Task 
+Créer une Task 
 
 Ce task a pour but de tester un ping sur les serveurs
 
@@ -69,14 +83,14 @@ Résultat du test ping
 
 ![Description de l’image](./images/resultat_task.png)
 
-NB : Assurez-vous d’avoir python installer sur vos machines cibles
+NB : Assurez-vous d’avoir python installé sur vos machines cibles
 
 ```bash
 sudo apt update
 sudo apt install python3 python3-venv -y
 ```
 
-Un autre exemple qui consiste a déployer nginx et apache respectivement sur nos 2 serveurs
+Un autre exemple qui consiste a déployer nginx et apache respectivement sur vos deux serveurs
 
 ![task_install_nginx_apache](./images/task_install_nginx_apache.png)
 
