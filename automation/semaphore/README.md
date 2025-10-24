@@ -15,12 +15,11 @@ Avant de commencer, assurez-vous d'avoir :
 
 ### Vérification de l'installation
 
-bash
-docker --version
-docker-compose --version
+- `docker --version`
+- `docker-compose --version`
 
 ### 📁 Structure du projet
-text
+
 semaphore/
 ├── docker-compose.yml      # Stack Docker
 ├── .env                    # Variables d'environnement
