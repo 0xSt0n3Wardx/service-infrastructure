@@ -37,16 +37,14 @@ Voici l'arborescence du projet :
 2. Vérification du statut
 `docker-compose ps`
 
-## 🌐 Accès à l'interface
+🧩 7️⃣ Configuration post-installation
+Connectez-vous avec les identifiants admin définis dans .env.
+Créez un projet (ex : homelab)
+Créer un une nouvelle clé
 
-Une fois les conteneurs démarrés, accédez à Semaphore :
-
-`URL : http://ip_server:3444`
-
-Identifiants : Utilisez les credentials admin définis dans .env
 
 ## 📚 Ressources utiles
 
-[Documentation Semaphore](https://semaphoreui.com/)
-[Guide Ansible](https://docs.ansible.com/)
-[Docker Documentation](https://docs.docker.com/)
+`[Documentation Semaphore](https://semaphoreui.com/docs)`
+`[Guide Ansible](https://docs.ansible.com/)`
+`[Docker Documentation](https://docs.docker.com/)`
