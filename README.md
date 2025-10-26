@@ -22,4 +22,4 @@ This repository includes my configurations for reverse proxy, authentication, mo
 
 ## 🔗 Security Integration
 
-This setup integrates with my [Homelab Security](lien-vers-repo-security) for a complete and secure infrastructure.
+This setup integrates with my [Homelab Security](https://github.com/0xSt0n3Wardx/security-guides) for a complete and secure infrastructure.
