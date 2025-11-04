@@ -15,8 +15,8 @@ services:
       - database:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: ${PG_PASS:?database password required}
-      POSTGRES_USER: ${PG_USER:-authentik}
-      POSTGRES_DB: ${PG_DB:-authentik}
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_DB: ${PG_DB}
     env_file:
       - .env
   redis:
@@ -32,14 +32,14 @@ services:
     volumes:
       - redis:/data
   server:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2024.6.1}
+    image: ${AUTHENTIK_IMAGE}:${AUTHENTIK_TAG}
     restart: unless-stopped
     command: server
     environment:
       AUTHENTIK_REDIS__HOST: redis
       AUTHENTIK_POSTGRESQL__HOST: postgresql
-      AUTHENTIK_POSTGRESQL__USER: ${PG_USER:-authentik}
-      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB:-authentik}
+      AUTHENTIK_POSTGRESQL__USER: ${PG_USER}
+      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB}
       AUTHENTIK_POSTGRESQL__PASSWORD: ${PG_PASS}
     volumes:
       - /home/portainer/docker-compose/authentik/media:/media
@@ -47,20 +47,20 @@ services:
     env_file:
       - .env
     ports:
-      - "${COMPOSE_PORT_HTTP:-9011}:9000"
-      - "${COMPOSE_PORT_HTTPS:-9012}:9443"
+      - "${COMPOSE_PORT_HTTP}:9000"
+      - "${COMPOSE_PORT_HTTPS}:9443"
     depends_on:
       - postgresql
       - redis
   worker:
-    image: ${AUTHENTIK_IMAGE:-ghcr.io/goauthentik/server}:${AUTHENTIK_TAG:-2024.6.1}
+    image: ${AUTHENTIK_IMAGE}:${AUTHENTIK_TAG}
     restart: unless-stopped
     command: worker
     environment:
       AUTHENTIK_REDIS__HOST: redis
       AUTHENTIK_POSTGRESQL__HOST: postgresql
-      AUTHENTIK_POSTGRESQL__USER: ${PG_USER:-authentik}
-      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB:-authentik}
+      AUTHENTIK_POSTGRESQL__USER: ${PG_USER}
+      AUTHENTIK_POSTGRESQL__NAME: ${PG_DB}
       AUTHENTIK_POSTGRESQL__PASSWORD: ${PG_PASS}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
