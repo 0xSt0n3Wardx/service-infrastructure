@@ -59,9 +59,8 @@ resource "proxmox_virtual_environment_vm" "proxmox" {
     dedicated = 2048
   }
 
-  ##########################################################
   # Réseau
-  ##########################################################
+ 
   network_device {
     bridge    = element(var.network_bridge, count.index)
     vlan_id   = element(var.vlan_tag, count.index)
